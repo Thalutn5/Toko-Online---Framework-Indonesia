@@ -32,21 +32,21 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?= base_url('Kategori/elektronik') ?>">
         <i class="fas fa-fw fa-tv"></i>
         <span>Electronics</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link" href="tabl  es.html">
+      <a class="nav-link" href="<?= base_url('Kategori/clothes') ?>">
         <i class="fas fa-fw fa-tshirt"></i>
         <span>Clothes</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?= base_url('Kategori/sports') ?>">
         <i class="fas fa-fw fa-futbol"></i>
         <span>Sports</span></a>
     </li>

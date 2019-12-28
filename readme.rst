@@ -49,11 +49,11 @@ Completition based Videos From `Framework Indonesia <https://www.youtube.com/cha
 +---------------------------------------+--------------------+
 |     Detail Invoice Penjualan          |          ✔         |
 +---------------------------------------+--------------------+
-|     Detail Produk                     |          ❌        |
+|     Detail Produk                     |          ✔         |
 +---------------------------------------+--------------------+
-|     Kategori Produk                   |          ❌        |
+|     Kategori Produk                   |          ✔         |
 +---------------------------------------+--------------------+
-|     Mengelola Stok Barang             |          ❌        |
+|     Mengelola Stok Barang             |          ✔         |
 +---------------------------------------+--------------------+
 |     Login User                        |          ❌        |
 +---------------------------------------+--------------------+
