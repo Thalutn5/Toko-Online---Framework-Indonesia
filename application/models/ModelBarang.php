@@ -32,14 +32,18 @@ class ModelBarang extends CI_Model
 
     public function find($id)
     {
-        $result = $this->db->where('id_brg', $id)
-            ->limit(1)
-            ->get('tb_barang');
+        $result = $this->db->get_where('tb_barang', ['id_brg' => $id], 1);
 
         if ($result->num_rows() > 0) {
             return $result->row();
         } else {
             return array();
         }
+    }
+
+    public function detailBrg($idBarang)
+    {
+        $result = $this->db->get_where('tb_barang', ['id_brg' => $idBarang]);
+        return $result->result_array();
     }
 }

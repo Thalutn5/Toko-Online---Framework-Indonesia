@@ -30,8 +30,8 @@
                   <small class="badge badge-secondary text-wrap mb-3">Rp <?= number_format($brg['harga_brg'], 0, ",", "."); ?></small><br>
 
                   <?= anchor('dashboard/addToCart/' . $brg['id_brg'], '<div class="btn btn-block btn-warning font-weight-bold mb-2">Add to cart</div>') ?>
-                  <a href="#" class="btn btn-block btn-secondary">Details</a>
 
+                  <?= anchor('dashboard/detailBarang/' . $brg['id_brg'], '<div class="btn btn-block btn-outline-secondary">Detail</div>') ?>
                 </div>
               </div>
             <?php endforeach; ?>

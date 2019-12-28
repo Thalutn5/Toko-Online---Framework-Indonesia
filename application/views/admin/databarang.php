@@ -24,7 +24,7 @@
                     <td class="text-center"><?= $brg['kategori_brg']; ?></td>
                     <td class="text-center"><?= number_format($brg['harga_brg'], 0, ",", "."); ?></td>
                     <td class="text-center"><?= $brg['stok_brg']; ?></td>
-                    <td><button class="btn btn-success btn-sm"><i class="fas fa-search"></i></button></td>
+                    <td><?= anchor('admin/DataBarang/detail/' . $brg['id_brg'], '<button class="btn btn-success btn-sm"><i class="fas fa-search"></i></button>') ?></td>
                     <td><?= anchor('admin/DataBarang/edit/' . $brg['id_brg'], '<button class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt"></i></button>') ?></td>
                     <td><?= anchor('admin/DataBarang/delete/' . $brg['id_brg'], '<button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>') ?></td>
                 </tr>

@@ -94,4 +94,14 @@ class DataBarang extends CI_Controller
         $this->ModelBarang->hapusBarang($where, 'tb_barang');
         redirect('admin/DataBarang');
     }
+
+    public function detail($idBarang)
+    {
+        $data['barang'] = $this->ModelBarang->detailBrg($idBarang)[0];
+
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('admin/detailbarang', $data);
+        $this->load->view('templates/footer');
+    }
 }
