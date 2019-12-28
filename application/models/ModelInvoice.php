@@ -35,11 +35,18 @@ class ModelInvoice extends CI_Model
 
     public function tampilData()
     {
-        $result = $this->db->get('tb_invoice');
-        if ($result->num_rows() > 0) {
-            return $result->result_array();
-        } else {
-            return false;
-        }
+        return $this->db->get('tb_invoice')->result_array();
+    }
+
+    public function ambilIdInvoice($idInvoice)
+    {
+        $result = $this->db->get_where('tb_invoice', ['id' => $idInvoice], 1);
+        return $result->result_array();
+    }
+
+    public function ambilIdPesanan($idInvoice)
+    {
+        $result = $this->db->get_where('tb_pesanan', ['id_invoice' => $idInvoice]);
+        return $result->result_object();
     }
 }

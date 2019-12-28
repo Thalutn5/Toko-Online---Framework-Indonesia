@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h4>Invoice Pemesanan Produk</h4>
 
-    <table class="table table-bordered table-hover table-striped">
+    <table class="table table-hover table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -21,7 +21,7 @@
                     <td><?= $inv['tgl_pesan'] ?></td>
                     <td><?= $inv['batas_bayar'] ?></td>
                     <td>
-                        <div class="btn btn-sm btn-primary">Detail</div>
+                        <?= anchor('admin/Invoice/detail/' . $inv['id'], '<div class="btn btn-sm btn-primary">Detail</div>') ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

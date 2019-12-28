@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <h4>Shopping Cart</h4>
 
-    <table class="table table-bordered table-striped table-hover">
-        <thead align="center">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="text-center">
             <tr>
                 <th>No</th>
                 <th>Nama</th>
@@ -18,21 +18,20 @@
             foreach ($this->cart->contents() as $items) : ?>
 
                 <tr>
-                    <td align="center"><?= $no++ ?></td>
-                    <td align="center"><?= $items['name'] ?></td>
-                    <td align="center"><?= $items['qty'] ?></td>
-                    <td align="right"><?= number_format($items['price'], 0, ",", ".") ?></td>
-                    <td align="right"><?= number_format($items['subtotal'], 0, ",", ".") ?></td>
-                    <td align="center"><?= anchor('dashboard/hapusKeranjang/' . $items['rowid'], '<button class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></button>') ?></td>
+                    <td class="text-center"><?= $no++ ?></td>
+                    <td class="text-center"><?= $items['name'] ?></td>
+                    <td class="text-center"><?= $items['qty'] ?></td>
+                    <td class="text-right">Rp <?= number_format($items['price'], 0, ",", ".") ?></td>
+                    <td class="text-right">Rp <?= number_format($items['subtotal'], 0, ",", ".") ?></td>
+                    <td class="text-center"><?= anchor('dashboard/hapusKeranjang/' . $items['rowid'], '<button class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></button>') ?></td>
                 </tr>
 
             <?php endforeach; ?>
             <tr>
-                <td colspan="3">
-                <td align="center" class="font-weight-bold">Total</td>
-                <td align="right"><?= number_format($this->cart->total(), 0, ",", ".") ?></td>
+                <td colspan="3"></td>
+                <td class="font-weight-bold text-center">Total</td>
+                <td class="font-weight-bold text-right">Rp <?= number_format($this->cart->total(), 0, ",", ".") ?></td>
                 <td></td>
-                </td>
             </tr>
         </tbody>
     </table>

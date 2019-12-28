@@ -47,7 +47,7 @@ Completition based Videos From `Framework Indonesia <https://www.youtube.com/cha
 +---------------------------------------+--------------------+
 |     Invoice Penjualan                 |          ✔         |
 +---------------------------------------+--------------------+
-|     Detail Invoice Penjualan          |          ❌        |
+|     Detail Invoice Penjualan          |          ✔         |
 +---------------------------------------+--------------------+
 |     Detail Produk                     |          ❌        |
 +---------------------------------------+--------------------+

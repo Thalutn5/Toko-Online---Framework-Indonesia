@@ -111,10 +111,11 @@
             </div>
           </li>
 
-          <div class="navbar">
+
+          <div class="nav-item no-arrow mx-1">
             <!-- Nav Item - Alerts -->
             <?php $keranjang = $this->cart->total_items() ?>
-            <li class="nav-item dropdown no-arrow mx-1">
+            <li class="nav-item no-arrow mx-1">
               <a class="nav-link" href="<?= base_url('Dashboard/cartDetails'); ?>" id="alertsDropdown" role="button">
                 <i class="fas fa-shopping-cart fa-fw"></i>
                 <!-- Counter - Alerts -->
@@ -122,6 +123,7 @@
               </a>
             </li>
           </div>
+
 
 
           <div class="topbar-divider d-none d-sm-block"></div>
