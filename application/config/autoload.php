@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'cart');
+$autoload['libraries'] = array('database', 'cart', 'session', 'form_validation');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('ModelBarang', 'ModelInvoice', 'ModelKategori');
+$autoload['model'] = array('ModelBarang', 'ModelInvoice', 'ModelKategori', 'ModelAuth');

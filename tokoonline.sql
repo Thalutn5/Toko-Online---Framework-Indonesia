@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2019 at 04:54 PM
+-- Generation Time: Jan 02, 2020 at 03:36 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -112,6 +112,28 @@ END
 $$
 DELIMITER ;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(56) NOT NULL,
+  `username` varchar(56) NOT NULL,
+  `password` varchar(56) NOT NULL,
+  `role_id` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`id`, `name`, `username`, `password`, `role_id`) VALUES
+(1, 'admin', 'admin', 'admin123', 1),
+(2, 'Bambank Surapadi', 'UcupKucup', '1234321', 2);
+
 --
 -- Indexes for dumped tables
 --
@@ -135,6 +157,12 @@ ALTER TABLE `tb_pesanan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -155,6 +183,12 @@ ALTER TABLE `tb_invoice`
 --
 ALTER TABLE `tb_pesanan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
